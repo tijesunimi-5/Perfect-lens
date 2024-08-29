@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +32,132 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.bg-pictures {
+  width: 100%;
+  height: 50vh;
+  animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background: url(/lens8.jpg) no-repeat;
+    background-size: cover;
+  }
+  35% {
+    background: url(/lens7.jpg) no-repeat;
+    background-size: cover;
+  }
+  45% {
+    background: url(/lens3.jpg) no-repeat;
+    background-size: cover;
+  }
+  55% {
+    background: url(/lens2.jpg) no-repeat;
+    background-size: cover;
+  }
+  65% {
+    background: url(/lens5.jpg) no-repeat;
+    background-size: cover;
+  }
+  80% {
+    background: url(/lens6.jpg) no-repeat;
+    background-size: cover;
+  }
+  90% {
+    background: url(/lens4.jpg) no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url(/lens1.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.text {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  width: 415px;
+  height: 50vh;
+}
+.text-stroke {
+  position: absolute;
+  bottom: 40px;
+  left: 32px;
+  -webkit-text-stroke: 0.2px white;
+  color: transparent;
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4em;
+}
+.courgette-regular {
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.pic-layout {
+  margin-left: 4px;
+}
+.pic-layout img {
+  border-radius: 8px;
+}
+
+.pic1 {
+  width: 220px;
+  height: 400px;
+}
+.pic2 {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  width: 185px;
+  height: 230px;
+  transition: 1s ease;
+}
+.pic2:hover {
+  scale: 1.05;
+}
+.pic3 {
+  position: absolute;
+  top: 235px;
+  right: 3px;
+  width: 185px;
+  height: 230px;
+}
+.pic4 {
+  margin-top: 5px;
+  width: 220px;
+  height: 280px;
+}
+.pic5 {
+  position: absolute;
+  top: 469px;
+  right: 3px;
+  width: 185px;
+  height: 400px;
+}
+.pic6 {
+  margin-top: 5px;
+  width: 220px;
+  height: 350px;
+}
+.pic7 {
+  position: absolute;
+  top: 875px;
+  right: 3px;
+  width: 185px;
+}
+label {
+  font-size: 1em;
+}
+input {
+  backdrop-filter: blur(20px);
+}
+form {
+  background: url(/lens7.jpg) no-repeat;
+  background-size: cover;
+  background-position-y: 10px;
 }
