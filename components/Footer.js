@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-gradient-to-r from-black via-gray-800">
+    <footer className="footer bg-gradient-to-r from-black via-gray-800 mt-[150px]">
       <div className="row border-orange-500 border-t rounded-tl-2xl rounded-tr-2xl">
         <div className="col">
           <h1 className="logos  ml-40">
