@@ -174,13 +174,13 @@ form {
   height: 60vh;
   position: relative;
   margin-top: 200px;
-  background: linear-gradient(to right, #121212, #222222);
+  /* background: linear-gradient(to right, #121212, #222222); */
   color: #fff;
   padding: 100px 0 30px;
-  border-top-left-radius: 125px;
+  /* border-top-left-radius: 125px; */
   font-size: 13px;
   line-height: 20px;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
 }
 .row {
   width: 500px;
