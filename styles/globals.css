@@ -36,42 +36,98 @@ body {
 
 .bg-pictures {
   width: 100%;
-  height: 50vh;
   animation: animate 20s linear infinite;
+}
+@media (min-width: 375px) {
+  .bg-pictures {
+    width: 100%;
+    height: 70vh;
+    animation: animateMobile 20s linear infinite;
+  }
+  @keyframes animateMobile {
+    0% {
+      background: url(/lens8.jpg) no-repeat;
+      background-size: cover;
+      background-position-y: 0;
+    }
+    35% {
+      background: url(/lens7.jpg) no-repeat;
+      background-size: cover;
+      background-position-y: 0;
+    }
+    45% {
+      background: url(/lens3.jpg) no-repeat;
+      background-size: cover;
+      background-position-y: 0;
+    }
+    55% {
+      background: url(/lens2.jpg) no-repeat;
+      background-size: cover;
+      background-position-y: 0;
+    }
+    65% {
+      background: url(/lens5.jpg) no-repeat;
+      background-size: cover;
+      background-position-y: 0;
+    }
+    80% {
+      background: url(/lens6.jpg) no-repeat;
+      background-size: cover;
+      background-position-y: 0;
+    }
+    90% {
+      background: url(/lens4.jpg) no-repeat;
+      background-size: cover;
+      background-position-y: 0;
+    }
+    100% {
+      background: url(/lens1.jpg) no-repeat;
+      background-size: cover;
+      background-position-y: 0;
+    }
+  }
 }
 
 @keyframes animate {
   0% {
     background: url(/lens8.jpg) no-repeat;
     background-size: cover;
+    background-position-y: -200px;
   }
   35% {
     background: url(/lens7.jpg) no-repeat;
     background-size: cover;
+    background-position-y: -200px;
   }
   45% {
     background: url(/lens3.jpg) no-repeat;
     background-size: cover;
+    background-position-y: -200px;
   }
   55% {
     background: url(/lens2.jpg) no-repeat;
     background-size: cover;
+    background-position-y: -200px;
   }
   65% {
     background: url(/lens5.jpg) no-repeat;
     background-size: cover;
+    background-position-y: -200px;
   }
   80% {
     background: url(/lens6.jpg) no-repeat;
     background-size: cover;
+    background-position-y: -200px;
   }
   90% {
     background: url(/lens4.jpg) no-repeat;
     background-size: cover;
+    background-position-y: -200px;
   }
   100% {
     background: url(/lens1.jpg) no-repeat;
     background-size: cover;
+    background-position-y: -200px;
   }
 }
 
@@ -80,7 +136,7 @@ body {
   position: absolute;
   top: 0;
   width: 500px;
-  height: 50vh;
+  height: 70vh;
 }
 .text-stroke {
   position: absolute;
@@ -109,6 +165,7 @@ body {
   padding-top: 20px;
   width: 270px;
   height: 400px;
+  transition: 1s ease;
 }
 .pic2 {
   position: absolute;
@@ -118,8 +175,13 @@ body {
   height: 230px;
   transition: 1s ease;
 }
-.pic2:hover {
-  scale: 1.05;
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+img:hover {
+  scale: 1.03;
 }
 .pic3 {
   position: absolute;
@@ -127,11 +189,13 @@ body {
   right: 3px;
   width: 220px;
   height: 230px;
+  transition: 1s ease;
 }
 .pic4 {
   margin-top: 5px;
   width: 270px;
   height: 280px;
+  transition: 1s ease;
 }
 .pic5 {
   position: absolute;
@@ -139,17 +203,20 @@ body {
   right: 3px;
   width: 220px;
   height: 400px;
+  transition: 1s ease;
 }
 .pic6 {
   margin-top: 5px;
   width: 270px;
   height: 350px;
+  transition: 1s ease;
 }
 .pic7 {
   position: absolute;
   top: 875px;
   right: 3px;
   width: 220px;
+  transition: 1s ease;
 }
 label {
   font-size: 1em;
@@ -162,9 +229,6 @@ form {
   background-size: cover;
   background-position-y: 10px;
 }
-
-
-
 
 //Footer designs
 .footer {
@@ -187,14 +251,13 @@ form {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
 .col {
   flex-basis: 25%;
   padding: 10px;
-  
 }
 .col:nth-child(2),
 .col:nth-child(3) {
