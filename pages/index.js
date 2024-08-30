@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function HomePage() {
   return (
-    <main className="h-[350vh]">
+    <main className="h-[350vh] w-[505px] overflow-x-hidden">
       <div className="relative bg-black h-[50vh] w-[500px] mt-12">
         <div className="bg-pictures relative"></div>
         <div className="text">

@@ -85,7 +85,7 @@ body {
 .text-stroke {
   position: absolute;
   bottom: 40px;
-  left: 32px;
+  left: 102px;
   -webkit-text-stroke: 0.2px white;
   color: transparent;
   font-family: "Courgette", cursive;
@@ -161,4 +161,83 @@ form {
   background: url(/lens7.jpg) no-repeat;
   background-size: cover;
   background-position-y: 10px;
+}
+
+
+
+
+//Footer designs
+.footer {
+  margin: 0;
+  border: 1px solid #dcdada;
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  margin-top: 200px;
+  background: linear-gradient(to right, #121212, #222222);
+  color: #fff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+  border: 1px solid #fff;
+}
+.row {
+  width: 500px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; 
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+  
+}
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 25%;
+}
+.logos {
+  width: 290px;
+  margin-bottom: 30px;
+}
+.col h3 {
+  width: fit-content;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.copyright {
+  text-align: center;
+}
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
 }
