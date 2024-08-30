@@ -169,7 +169,7 @@ form {
 //Footer designs
 .footer {
   margin: 0;
-  border: 1px solid #dcdada;
+  /* border: 1px solid #dcdada; */
   width: 100%;
   height: 60vh;
   position: relative;
