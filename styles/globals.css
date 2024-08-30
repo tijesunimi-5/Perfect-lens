@@ -79,7 +79,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
-  width: 415px;
+  width: 500px;
   height: 50vh;
 }
 .text-stroke {
@@ -106,14 +106,15 @@ body {
 }
 
 .pic1 {
-  width: 220px;
+  padding-top: 20px;
+  width: 270px;
   height: 400px;
 }
 .pic2 {
   position: absolute;
   top: 0;
   right: 3px;
-  width: 185px;
+  width: 220px;
   height: 230px;
   transition: 1s ease;
 }
@@ -124,31 +125,31 @@ body {
   position: absolute;
   top: 235px;
   right: 3px;
-  width: 185px;
+  width: 220px;
   height: 230px;
 }
 .pic4 {
   margin-top: 5px;
-  width: 220px;
+  width: 270px;
   height: 280px;
 }
 .pic5 {
   position: absolute;
   top: 469px;
   right: 3px;
-  width: 185px;
+  width: 220px;
   height: 400px;
 }
 .pic6 {
   margin-top: 5px;
-  width: 220px;
+  width: 270px;
   height: 350px;
 }
 .pic7 {
   position: absolute;
   top: 875px;
   right: 3px;
-  width: 185px;
+  width: 220px;
 }
 label {
   font-size: 1em;

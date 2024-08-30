@@ -7,14 +7,14 @@ const inter = Inter({ subsets: ["latin"] });
 export default function HomePage() {
   return (
     <main className="h-[350vh]">
-      <div className="relative bg-black h-[50vh] w-full mt-12">
+      <div className="relative bg-black h-[50vh] w-[500px] mt-12">
         <div className="bg-pictures relative"></div>
         <div className="text">
           <i className="text-stroke">Capturing the essence of life</i>
         </div>
       </div>
 
-      <div className="mt-12">
+      <div className="mt-12 w-[500px]">
         <div>Perfect len's introduction</div>
 
         <div>
@@ -22,8 +22,10 @@ export default function HomePage() {
             Catalog
           </h1>
 
-          <div className="pic-layout mt-6 relative w-full">
-            <img src={"/lens1.jpg"} className="pic1" />
+          <div className="pic-layout mt-6 relative w-[500px]">
+            <div>
+              <img src={"/lens1.jpg"} className="pic1" />
+            </div>
             <div>
               <img src={"/lens2.jpg"} className="pic2" />
             </div>
@@ -45,7 +47,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="mt-32 text-center courgette-regular text-2xl">
+        <div className="mt-40 text-center courgette-regular text-2xl m-auto">
           <h1>Send a message</h1>
 
           <form className="border-orange-500 border rounded mt-6 ml-1">
